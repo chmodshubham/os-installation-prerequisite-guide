@@ -112,7 +112,7 @@ vim /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 In some systems, the network configuration is managed by other tools such as **Subiquity**. To identify the correct Netplan YAML file, check which one your system uses. For Subiquity-managed systems, the relevant configuration file is: `/etc/cloud/cloud.cfg.d/subiquity-disable-cloudinit-networking.cfg`
 
 2️⃣ **Add the following content:**
-```cfg
+```yaml
 network: {config: disabled}
 ```
 
