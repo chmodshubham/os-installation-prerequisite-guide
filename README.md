@@ -104,10 +104,12 @@ network:
 
 If your system uses **cloud-init**, you need to disable its network configuration to ensure your static IP settings persist across reboots. To do this:
 
-1️⃣ **Create the following file:**
+1️⃣ **Create the following file (if not existed):**
 ```bash
 vim /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
+
+In some systems, the network configuration is managed by other tools such as **Subiquity**. To identify the correct Netplan YAML file, check which one your system uses. For Subiquity-managed systems, the relevant configuration file is: `/etc/cloud/cloud.cfg.d/subiquity-disable-cloudinit-networking.cfg`
 
 2️⃣ **Add the following content:**
 ```cfg
