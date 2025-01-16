@@ -20,6 +20,9 @@ This guide covers the key steps for configuring your system during the OS instal
 
 ## **Static IP Configuration**
 
+> [!WARNING]
+> Dont use values from the image!! Use configuration below in the table!!
+
 ![image](https://github.com/user-attachments/assets/627813d0-9b4e-4a09-bd3e-c592077d9838)
 
 ### 🖥 **Network Settings Overview**
